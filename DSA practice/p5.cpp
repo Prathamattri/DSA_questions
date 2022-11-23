@@ -16,9 +16,9 @@ string reverseStr(string str){
 }
 //checking priority of operators
 int priority(char ch){
-    if(ch=='+' || ch=='-') return 3;
+    if(ch=='+' || ch=='-') return 1;
     if(ch=='*' || ch=='/') return 2;
-    if(ch=='^') return 1;
+    if(ch=='^') return 3;
     return 0;
 }
 //infix to postfix conversion
